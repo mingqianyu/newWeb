@@ -1,0 +1,428 @@
+body {
+    overflow: hidden;
+}
+.allbox {
+    width: 1920px;
+    margin: 0 auto;
+	padding-top: .9rem;
+}
+.header {
+    width: 100%;
+}
+.boxHide {
+    display: none;
+}
+.aboutSlider {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: .2rem;
+    align-items: center;
+    padding: 0 100px;
+}
+.phoneImg {
+    display: none;
+}
+.aboutSlider div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    cursor: pointer;
+	font-size: 16px;
+}
+.active {
+    border-bottom: 3px solid #C30B0B;
+    color: #C30B0B;
+    font-weight: bold;
+    line-height: 55px;
+    height: 55px !important;
+}
+.aboutSlider div:hover{
+    border-bottom: 3px solid #C30B0B;
+    color: #C30B0B;
+    font-weight: bold;
+    height: 55px !important;
+}
+
+.mainCon {
+    width: 1200px;
+    margin: 0 auto;
+	padding-bottom: 30px;
+}
+.phone .allbox{
+    width: 100%;
+}
+.phone .header .pcImg {
+    width: 100%;
+}
+.phone .aboutSlider {
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.phone .aboutSlider div {
+    width: 100%;
+    height: 60px;
+}
+.phone .pcImg {
+    display: none;
+}
+.phone .phoneImg {
+    display: block;
+    width: 100%;
+}
+/* sliderCon */
+.sliderCon {
+    background: #f2f2f2;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.mainCon {
+    width: 1180px;
+    margin: 0 auto;
+}
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contactCon {
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contactImg {
+    margin: 10px;
+}
+.imgOne {
+    width: 100%;
+    display: flex;
+    padding-right: 29px;
+    justify-content: space-between;
+	padding-top:20px;
+}
+.imgOne .imgRight {
+    display: flex;
+}
+.imgRight div:first-child {
+    margin-right: 10%;
+}
+.imgLeft span {
+    color:#c30b0b;
+}
+.imgLeft {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0 0 20px;
+}
+.imgLeft p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+	margin-bottom: 30px;
+}
+.imgRight div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 44px;
+}
+
+.car {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.carCon ~ img {
+    width: 337px;
+}
+.carCon {
+    margin-top: 30px;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+}
+.carHeader {
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    background: #666;
+    align-items: center;
+    height: 50px;
+    padding-left: 25px;
+}
+.carHeader p {
+    margin-left: 20px;
+}
+.carHeader:hover {
+    background:#c30b0b;
+}
+.carfooter {
+    padding: 20px 60px;
+
+}
+.carGroup {
+    margin-top: 15px;
+    font-size: 16px;
+}
+.carGroup p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: .05rem;
+}
+
+.carBtn {
+    width: 400px;
+    font-size: 16px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  0 auto;
+    margin-top: 40px;
+}
+.carBtn  div {
+    width: 150px;
+    height: 37px;
+    line-height: 37px;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    background: #C30B0B;
+    color: #fff;
+    border-radius: 5px;
+}
+.formInput {
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input1 {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.input1 input  {
+    width: 48%;
+    height: 50px;
+    background: #EBEBEB;
+    border:none;
+    font-size: 20px;
+    border-radius: 4px;
+    padding-left: .2rem;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #B7AFB2;
+    font-size: 20px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #B7AFB2;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #B7AFB2;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #B7AFB2;
+}
+.mainForm {
+    margin-top: 30px;
+}
+.input1 ~input {
+    width: 100%;
+    height: 50px;
+    background: #EBEBEB;
+    border:none;
+    font-size: .2rem;
+    border-radius: .04rem;
+    padding-left: .2rem;
+    margin-top: .2rem;
+}
+.textareaBox {
+    height: 2rem ;
+    width: 100%;
+    background: #EBEBEB;
+    border:none;
+    font-size: .2rem;
+    border-radius: .04rem;
+    padding-left: .2rem;
+    padding: .2rem ;
+    margin-top: .2rem;
+    resize: none;
+}
+.formBtn {
+    background: #C30B0B ;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border:none;
+    font-size: .35rem;
+    border-radius: .04rem;
+    padding-left: .2rem;
+    margin-top: .2rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 50px;
+}
+.formBtn:hover {
+    background: rgb(245, 60, 60);
+}
+.carBtn {
+    cursor: pointer;
+}
+
+
+.contactImg {
+    margin: .3rem ;
+}
+.aboutSlider a {
+    text-decoration: none;
+    color: #343434;
+}
+.phone .aboutSlider a {
+    display: inline-block;
+    width: 32%;
+}
+.phone .sliderCon {
+    width: 7.5rem;
+    min-width: 7.5rem;
+}
+.phone .mainCon {
+    width: 7.5rem;
+}
+.phone .imgOne {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+}
+
+.mapBox img{
+    width: 100%;
+}
+
+.phone .contactCon {
+    padding: .2rem;
+}
+.phone .imgOne .imgLeft {
+    width: 100%;
+    font-size: .4rem;
+    line-height: .6rem;
+}
+.phone .imgOne .imgRight {
+    width: 100%;
+    justify-content: center;
+}
+.phone .imgLeft p:first-child {
+    font-size: .45rem;
+}
+.phone .imgRight {
+    margin-top: .2rem;
+}
+.phone .carHeader {
+    font-size: .4rem;
+    padding-left: .25rem;
+}
+.phone .carHeader p {
+    margin-left: .2rem;
+}
+.phone .carCon .carHeader img {
+    width: .4rem;
+}
+.phone .carfooter {
+    padding: 0rem .2rem;
+}
+.phone .carHeader {
+    margin-top: .2rem;
+}
+.phone .carBtn {
+    width: 6rem;
+    font-size: .16rem;
+    margin-top: .4rem;
+}
+.phone .mainForm {
+    width: 7.5rem;
+    padding: .1rem;
+    margin-top: .3rem;
+}
+.phone .input1 {
+    width: 100%;
+    flex-direction: column;
+}
+.phone .input1 input {
+    margin-top: .3rem;
+    width: 100%;
+}
+
+.phone .formInput {
+    height: auto;
+    padding-bottom: .5rem;
+    padding-top: .3rem;
+}
+.carBtn div a {
+    color: #fff;
+}
+.headertitle {
+    width: 337px;
+    height: 125px;
+    margin: .3rem;
+    position: relative;
+}
+.headertitle .contactImg {
+    margin: 0;
+}
+.headertitle p:nth-child(2) {
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    left: 116px;
+    right: 0;
+    top: 43px;
+}
+.headertitle p:nth-child(3) {
+    font-size: 16px;
+    position: absolute;
+    left: 22px;
+    color: rgb(120, 120, 120);
+    right: 0;
+    top: 105px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 手机端样式 */
+.phone {
+    width: 7.5rem;
+}
+.phone .aboutSlider {
+    padding: 0;
+}
+.imgOne ~ img {
+    margin-top: 20px;
+}

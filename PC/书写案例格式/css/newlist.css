@@ -1,0 +1,150 @@
+.csMaincon {
+    width: 889px;
+    margin-top: 40px;
+}
+.csd1 {
+    height: 50px;
+    color: #666666;
+    font-size: 14px;
+    background: #F0F0F0;
+    line-height: 50px;
+    text-align: center;
+}
+.csdslder {
+    display: inline-block;
+    width: 19.6%;
+}
+.csdslder:hover {
+    color: #fff;
+    background: url('../images/redbg.jpg') no-repeat 0 0 / 100% 100%;
+    height: 56px;
+}
+.activecsd {
+    color: #fff;
+    background: url('../images/redbg.jpg') no-repeat 0 0 / 100% 100%;
+    height: 56px;
+}
+.csdcontent {
+    display: none;
+    padding: 40px 30px 60px 0px;
+    color: #666666;
+    font-size: 14px;
+}
+.morencsd {
+    display: block;
+}
+
+.nl1 {
+    overflow: hidden
+}
+.nl1 img {
+    width:234px;
+height:136px;
+float: left;
+}
+.nl1_1 {
+    margin-left: 30px;
+    float: left;
+    width: 570px;
+}
+.nl1_1 p:first-child {
+    font-size: 22px;
+    color: #333;
+}
+.xian {
+    width:35px;
+height:2px;
+background: #b20000;
+margin: 13px 0 9px 0;
+}
+.nl1_1 p:nth-child(3) {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+
+}
+.nl1_2 .icon {
+    width: 14px;
+    height: 14px;
+    color: #999999;
+}
+.nl1_2 {
+    color: #999;
+    margin-top: 15px;
+}
+.timeicon { 
+    margin-left: 18px;
+}
+.line2 {
+    width: 400px;
+    font-size: 16px;
+}
+.nl2_1 .icon {
+    color: #666666;
+    position: relative;
+    top: -11px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+.nl2 {
+    padding: 35px 0;
+    border-bottom: 1px solid #F5F5F5;
+}
+.nl2_2 {
+    opacity: .6;
+    font-size: 12px;
+}
+.nl2_1:hover {
+    color:#b20000;
+}
+.nl2_1:hover .icon {
+    color:#b20000;
+}
+
+.nl2 > a {
+    display: block;
+    overflow: hidden;
+    height: 35px;
+    line-height: 35px;
+}
+.line1 {
+    width: 500px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

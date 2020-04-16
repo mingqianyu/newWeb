@@ -1,0 +1,143 @@
+/*base:介绍
+.l:左浮动 .r 右浮动
+.clearfix 清除浮动父级  .clear 子元素属性.
+.f-allmid 水平垂直居中
+.f-allmid-cf 都居中垂直摆放
+.f-smid-cspa 水平居中 垂直自适应
+.f-cmid-sspa 垂直居中 水平自适应
+.f-cmid-sbet 垂直居中 水平两端对齐
+*/
+/*水平垂直居中*/
+.f-allmid{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*水平垂直居中 垂直摆放*/
+.f-allmid-cf{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*水平居中 垂直自适应摆放*/
+.f-smid-cspa{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/*垂直居中 水平自适应*/
+.f-cmid-sspa{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+/*垂直居中 水平两端对齐*/
+.f-cmid-sbet{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+/*子元素属性    margin: auto;给单个子元素设置 完美居中,多个元素会把剩余的空间放在它后面
+order: 子元素的排序顺序 小在前,可为负
+flex :子元素按比例分配
+align-self:
+ flex-start:子元素靠最上面
+ flex-end:子元素在最下面
+ stretch:子元素拉伸占满正行
+*/
+/*
+父元素设置 justify-content
+	flex-start：弹性项目向行头紧挨着填充。
+	flex-end：弹性项目向行尾紧挨着填充。
+
+align-items:都是水平的,column垂
+	flex-start:放在盒子顶部位置
+	flex-end :放到盒子底部
+flex-wrap: wrap 自动换行,不会溢出
+ 	wrap-reverse:优先把下面放满,在往上放.
+*/
+
+* {box-sizing: border-box;}
+
+/*王哥 base 开始*/
+
+@charset "utf-8";
+/* CSS Document  1rem 10px  */
+
+/*html{font-size: 100%;}*/
+*{
+	touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	}
+body {
+    background: #f2f2f2;font:18px "Microsoft Yahei",Arial,Tahoma, Helvetica,\5b8b\4f53, sans-serif; }
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,object,code,em,span,var,legend,button,input,textarea,th,td,a,img,header,footer,nav,aside,audio,datalist,section { margin:0;padding:0;border:0;outline:0; }/*清除内外边距*/
+h1,h2,h3,h4,h5,h6 { font-weight:normal; }/*设置默认字体*/
+:focus { outline:0; }
+ul,ol,ul li,ol li { list-style: none; }/*重置列表*/
+address,caption,cite,em,code,dfn,th,var { font-style:normal;font-weight:normal; }
+form label { cursor:pointer; }
+input,button,select,textarea { font-family:inherit;font-size:100%;outline:none; }
+textarea { resize:none }
+input { vertical-align:middle; padding-left: 8px;}
+img { border:0; }/*重置图片元素*/
+table { border-collapse:collapse;border-spacing: 0; }/*重置表格*/
+.l { float:left; }
+.r { float:right; }
+button,input[type="reset"],input[type="button"],input[type="submit"] { line-height:normal !important; }
+a { text-decoration:none;}
+/* a { color:#666;} */
+/*a:hover { text-decoration:underline; }*/
+input { _filter:chroma(color=#000000); }
+/*--清除浮动
+------------------------------------------------------------------------------------------*/
+.clearfix:after { clear:both;content:".";display:block;font-size:0;height:0;visibility:hidden; }
+.clearfix:after { _zoom:1; }
+.overflow { overflow:hidden; _zoom:1; }
+.clear { clear:both; height:0;font-size:0; overflow:hidden; }
+/*王哥 base 结束*/
+body{
+    font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB”,Arial,sans-serif;
+}
+
+/*  新达人官网 */
+.reda:hover {
+    color: #b20000;
+}
+.red {
+    color: #b20000;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background: #fff;
+}
+
+ .mcolor{
+     color: #2B2B2B;
+ }
+ .icon {
+    width:24px; height: 24px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: #b20000;
+ }
+ a{
+     color: #2B2B2B;
+ }
+ .dps {display: inline-block;}

@@ -1,0 +1,155 @@
+.masonry {
+    -moz-column-count: 3;
+    /* Firefox */
+    -webkit-column-count: 3;
+    /* Safari 和 Chrome */
+    column-count: 3;
+    -moz-column-gap: 2em;
+    -webkit-column-gap: 2em;
+    column-gap: 2em;
+    width: 890px;
+    margin: 2em auto;
+}
+
+.item {
+    margin-bottom: 2em;
+    -moz-page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    width: 280px;
+    position: relative;
+    top: 0;
+    transition:  all .3s linear;
+}
+
+@media screen and (max-width: 800px) {
+    .masonry {
+        column-count: 2; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .masonry {
+        column-count: 1; 
+    }
+}
+.item_content img {
+    width: 280px;
+    height: auto;
+}
+.workp {
+    font-size: 16px;
+    color: #212121;
+}
+.work1 {
+    padding: 25px 20px 30px 20px;
+    border:1px solid rgba(230, 230, 230, 1);
+    margin-top: -5px;
+}
+.work1_btn {
+    width:110px;
+    height:22px;
+    background:rgba(255,255,255,1);
+    border:1px solid #b20000;;
+    border-radius:11px;   
+font-size:13px;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:rgba(178,0,0,1);
+line-height:22px;
+opacity:0.9;
+text-align: center;
+margin-top: 18px;
+margin-bottom: 35px;
+}
+.works1_2 .icon{
+    color: #B3B3B3;
+    width: 16px;
+    position: relative;
+    top: 3px;
+}
+.works1_2 span {
+    margin-left: 3px;
+}
+.works1_2 span:last-child {
+    float: right;
+    position: relative;
+    top: 6px;
+    color: #B3B3B3;
+    font-size: 14px;
+}
+.iconxin {
+    margin-left: 16px;
+}
+.item:hover {
+    box-shadow:0px 6px 12px 0px rgba(0, 0, 0, 0.12);
+    top: -3px;
+}
+
+
+.tl1 {
+    width: 890px;
+    height: 63px;
+    border-bottom: 1px solid #F0F0F0;
+    overflow: hidden;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #666666;
+}
+.course1_1 {
+    margin-bottom: 20px;
+}
+.tl1 a {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    color: #666;
+    padding: 7px 13px; 
+    border-radius: 13px;
+    height: 26px;
+    line-height: 13px;
+    position: relative;
+    top: -3px;
+}
+.tl1 p {
+        color: #2B2B2B;
+        font-weight: bold;
+        float: left;
+}
+
+.ared {
+    background: #b20000;
+    color: #fff !important;
+}
+.ared2 {
+    background: #b20000;
+    color: #fff !important;
+}
+.ared1 {
+    background: #b20000;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
