@@ -1,90 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<!DOCTYPE HTML>
+<html>
+    <style>
+        video {
+            background-color: transparent;
+        }
+
+    </style>
 <body>
-    
+
+<video src="./movie.ogv" controls="controls">
+your browser does not support the video tag
+</video>
+
 </body>
 </html>
-<script>
-    var result = {
-    code: "0",
-    msg: "操作成功",
-    data: {
-        data: [
-            {
-                activityId: "1156866838949916674",
-                activityName: "",
-                value: [
-                    {
-                        beginTime: "2019-08-20 00:00:00",
-                        joinActivityNum: 0
-                    },
-                    {
-                        beginTime: "2019-08-20 00:00:00",
-                        joinActivityNum: 0
-                    },
-                    
-                ]
-            },
-            {
-                activityId: "1156866838949916675",
-                activityName: "",
-                value: [
-                    {
-                        beginTime: "2019-08-20 00:00:00",
-                        joinActivityNum: 1
-                    },
-                    {
-                        beginTime: "2019-08-20 00:00:00",
-                        joinActivityNum: 2
-                    },
-                    
-                ]
-            },
-            {
-                activityId: "1156866838949916675",
-                activityName: "",
-                value: [
-                    {
-                        beginTime: "2019-08-20 00:00:00",
-                        joinActivityNum: 3
-                    },
-                    {
-                        beginTime: "2019-08-20 00:00:00",
-                        joinActivityNum: 4
-                    },
-                    
-                ]
-            },
-            
-        ]
-    }
-}
-
-//  data.length 是 对比活动的个数 
-
-//  rows 是赋值给 charts
-var rows = []
-
-var activeNum = result.data.data.length //活动个数
-var activeData = result.data.data //活动数据
-rows = result.data.data[0].value //第一个活动数据
-// 循环别的活动 放到 rows里面
-if (activeNum > 1) {
-    for (var i = 1; i < activeNum; i++) {
-        // activeData[i] 互动数据
-        for (var j = 0; j < activeData[i].value.length; j++) {
-            var str = "str"+i
-            rows[j][str] = activeData[i].value[j].joinActivityNum
-        }
-    }
-    console.log(rows)
-}
-
-
-</script>
