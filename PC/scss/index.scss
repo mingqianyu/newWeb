@@ -1438,23 +1438,29 @@ html {
     }
 
     #certify .swiper-button-prev {
+        position: absolute;
         left: -30px;
         width: 45px;
         height: 45px;
+        z-index: 1000000000;
         // background: url(../images/wm_button_icon.png) no-repeat;
         background-position: 0 0;
         background-size: 100%;
+
     }
 
     #certify .swiper-button-prev:hover {
         background-position: 0 -46px;
-        background-size: 100%
+        background-size: 100%;
+        cursor: pointer;
     }
 
     #certify .swiper-button-next {
+        position: absolute;
         right: -30px;
         width: 45px;
         height: 45px;
+        z-index: 100000000;
         // background: url(../images/wm_button_icon.png) no-repeat;
         background-position: 0 -93px;
         background-size: 100%;
@@ -1462,7 +1468,8 @@ html {
 
     #certify .swiper-button-next:hover {
         background-position: 0 -139px;
-        background-size: 100%
+        background-size: 100%;
+        cursor: pointer;
     }
 
     .zuopinslider {

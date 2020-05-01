@@ -1094,23 +1094,29 @@ html {
     border: 3px solid #C80700;
     background-color: #fff; }
   .zuopincon #certify .swiper-button-prev {
+    position: absolute;
     left: -30px;
     width: 45px;
     height: 45px;
+    z-index: 1000000000;
     background-position: 0 0;
     background-size: 100%; }
   .zuopincon #certify .swiper-button-prev:hover {
     background-position: 0 -46px;
-    background-size: 100%; }
+    background-size: 100%;
+    cursor: pointer; }
   .zuopincon #certify .swiper-button-next {
+    position: absolute;
     right: -30px;
     width: 45px;
     height: 45px;
+    z-index: 100000000;
     background-position: 0 -93px;
     background-size: 100%; }
   .zuopincon #certify .swiper-button-next:hover {
     background-position: 0 -139px;
-    background-size: 100%; }
+    background-size: 100%;
+    cursor: pointer; }
   .zuopincon .zuopinslider {
     width: 100%;
     position: relative;
