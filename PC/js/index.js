@@ -4,8 +4,13 @@ setTimeout(function () {
     // $('.index_ad').slideUp()
 
 }, 5000)
+// 页面滚动
+var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+$("html,body").animate({
+    scrollTop: 8700 + 'px',
+}, 100)
+// 头部栏
 $('.im_6slidercon li').eq(0).css('display', 'block');
-
 $('.im_6slider li').each(function (i, e) {
     $(e).click(function () {
         $('.im_6slider li').removeClass('im_6slideractive');
@@ -14,20 +19,190 @@ $('.im_6slider li').each(function (i, e) {
         $('.im_6slidercon li').eq(i).css('display', 'block');
     });
 });
-
-var swiper = new Swiper('.swiperBox .swiper-container', {
+var bannerswiper = new Swiper('.swiperBox .swiper-container', {
     loop: true,
     pagination: {
         el: '.swiperBox .swiper-pagination',
     },
 });
+// 录取
+$(function(){
+    $('.dowebok').liMarquee({
+        direction: 'up',
+        drag: false
+    });
+});
+
+var swiper = new Swiper('.lumainswiper .swiper-container', {
+    slidesPerView: 7,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  });
+
+  var galleryThumbsnews = new Swiper('.gallery-thumbs1', {
+    spaceBetween: 10,
+    slidesPerView: 7,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTopnew = new Swiper('.gallery-top1', {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: galleryThumbsnews
+    }
+  });
+
+$('.lus_1 ').each(function (i, e) {
+    $(e).click(function () {
+        $('.lus_1 ').removeClass('lus_1active');
+        $(e).addClass('lus_1active');
+        $('.lumaincon').css('display', 'none');
+        $('.lumaincon').eq(i).css('display', 'block');
+    });
+});
+$('.xinarrowgunleft').click(function() {
+    galleryTopnew.slidePrev()
+  }) 
+
+  $('.xinarrowgunright').click(function() {
+    galleryTopnew.slideNext()
+  }) 
+function numUp(obj, num) {
+    if (num < 133) {
+        var time = Math.floor(1000 / num);
+        var timer1;
+        var fixedNum = parseFloat(num%1).toFixed(2)-0
+        var i = 0;
+        if (i <= num) {
+            timer1 = setInterval(function () {
+                if (i <= num) {
+                    obj.text(i++);
+                } else {
+                    clearInterval(timer1);
+                    if (fixedNum > 0) {
+                        obj.text(i +fixedNum - 1);
+
+                    }
+                }
+            }, time)
+        } else {
+            clearInterval(timer1)
+        }
+    } else if (num > 133) {
+        var n = Math.ceil(num / (Math.floor(2000 / 15)));
+        var timer1;
+        var i = 0;
+        if (i <= num) {
+            timer1 = setInterval(function () {
+                if (i <= num) {
+                    obj.text(i += n);
+                } else {
+                    obj.text(num);
+                    clearInterval(timer1);
+                }
+            }, 10)
+        } else {
+            clearInterval(timer1)
+        }
+    }
+};
+
+numUp($(".numup1"), 56);
+numUp($(".numup2"), 5400);
+numUp($(".numup3"), 10000);
+numUp($(".numup4"), 98.2);
 
 
-var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+// 关于新闻
+$('.xincon_12 ').each(function (i, e) {
+    $(e).click(function () {
+        $('.xincon_12 ').removeClass('xincon_12active');
+        $(e).addClass('xincon_12active');
+        $('.xinmain').css('display', 'none');
+        $('.xinmain').eq(i).css('display', 'block');
+    });
+});
 
-$("html,body").animate({
-    scrollTop: 6000 + 'px',
-}, 100)
+var xinswiper = new Swiper('.xinmainleft .swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.xinmainleft .swiper-pagination',
+    },
+  });
+
+  $('.xinswierleft').click(function() {
+    xinswiper.slidePrev()
+  }) 
+
+  $('.xinswierright').click(function() {
+    xinswiper.slideNext()
+  }) 
+
+
+  $('.fkfkslider').each(function (i, e) {
+    $(e).click(function () {
+        $('.fkfkslider').removeClass('fkfkslideractive');
+        $(e).addClass('fkfkslideractive');
+        $('.fkfk2con').css('height', '0px');
+        // $('.fkfk2con').eq(i).css('display', 'block');
+        $('.fkfk2con').eq(i).css({
+            'height': '100px',
+            "border-bottom": '1px solid #E5E5E5'
+        });
+    });
+  });
+  $('.fkfk2con').eq(0).css({
+    'height': '100px',
+    "border-bottom": '1px solid #E5E5E5'
+});
+// 达人荣誉
+var ronswiper = new Swiper('.roncon .swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.roncon .swiper-pagination',
+      type: 'progressbar',
+    },
+    
+  });
+  $('.rongm_6 ').each(function (i, e) {
+    $(e).mouseenter(function () { 
+        $('.rongm_1').css('display', 'none');
+        $('.rongm_1').eq(i).css('display', 'block');   
+    });
+});
+$('.leftswiper').click(function() {
+    ronswiper.slidePrev();
+})
+$('.rightswiepr').click(function() {
+    ronswiper.slideNext();
+})
+// 优势开始
+var youswiper = new Swiper('.youcon .swiper-container',{
+    loop: true,
+    on: {
+        slideChangeTransitionStart: function(){
+            $('.yous_1 ').removeClass('yous_1active');
+            $('.yous_1').eq(this.activeIndex-1).addClass('yous_1active');
+        },
+    },
+});
+
+$('.yous_1 ').each(function (i, e) {
+    $(e).click(function () {
+        $('.yous_1 ').removeClass('yous_1active');
+        $(e).addClass('yous_1active');
+        // $('.youcon').css('display', 'none');
+        
+        youswiper.slideTo(i+1, 1000, false);//切换到第一个slide，速度为1秒
+        // $('.youcon').eq(i).css('display', 'block');
+    });
+});
+
+
 
 $(function () {
     $('.box3_4').eq(0).css('width', '325px');
@@ -56,6 +231,7 @@ $('.mxslider ').each(function (i, e) {
 });
 
 var proswiper = new Swiper('.mingshicon .swiper-container', {
+    loop: true,
     pagination: {
         el: '.mingshicon .swiper-pagination',
         type: 'progressbar',
@@ -125,7 +301,7 @@ var certifySwiper = new Swiper('#certify .swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '#certify .swiper-pagination',
         //clickable :true,
     },
     on: {
@@ -181,7 +357,14 @@ var huanswiper = new Swiper('.huancon_4 .swiper-container', {
       el: '.huancon_4 .swiper-pagination',
     },
   });
-
+  $('.mxslider5 ').each(function (i, e) {
+    $(e).click(function () {
+        $('.mxslider5 ').removeClass('mxslideractive2');
+        $(e).addClass('mxslideractive2');
+        $('.huancon').css('display', 'none');
+        $('.huancon').eq(i).css('display', 'block');
+    });
+});
 // 环境结束
 
 
