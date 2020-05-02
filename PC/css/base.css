@@ -6,6 +6,8 @@
 */
 /*水平垂直居中*/
 .fmind{
+
+    
     display: -webkit-flex;
     display: flex;
     align-items: center;
