@@ -1,13 +1,29 @@
 // $('.index_ad').slideDown()
 
 setTimeout(function () {
-    // $('.index_ad').slideUp()
-
+    $('.index_ad').slideUp()
 }, 5000)
+// 底部栏
+$(window).scroll(function(event){
+    if($(window).scrollTop() > 6300 ) {
+        $('.newfooter1').css({
+        "position": "relative",
+        "z-index": '1',          
+        })
+    } else {
+        $('.newfooter1').css({
+        "position": "fixed",
+        "z-index": '1000',  
+        'width': '1920px',
+        'background': '#1A1A1A',
+        'bottom': '0'        
+        })
+    }
+});
 // 页面滚动
 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 $("html,body").animate({
-    scrollTop: 8700 + 'px',
+    scrollTop: 3200 + 'px',
 }, 100)
 // 头部栏
 $('.im_6slidercon li').eq(0).css('display', 'block');
@@ -186,7 +202,12 @@ var youswiper = new Swiper('.youcon .swiper-container',{
     on: {
         slideChangeTransitionStart: function(){
             $('.yous_1 ').removeClass('yous_1active');
-            $('.yous_1').eq(this.activeIndex-1).addClass('yous_1active');
+            console.log(this.activeIndex)
+            if (this.activeIndex == 9) {
+                $('.yous_1').eq(0).addClass('yous_1active');
+            } else {
+                $('.yous_1').eq(this.activeIndex-1).addClass('yous_1active');
+            }
         },
     },
 });
@@ -240,6 +261,30 @@ var proswiper = new Swiper('.mingshicon .swiper-container', {
     observeParents: true, //修改swiper的父元素时，自动初始化swiper
 });
 
+$('.bycmain').on('mouseleave',function() {
+    $('.bycmain li').css('width','236px')
+})
+$('.bycmain').each(function(i,e) {
+    let liarr =  $(e).children('li');
+    $(e).children('li').each(function(i,e) {
+        $(e).on('mouseenter',function() {
+            liarr.css('width','115px')
+            $(this).css('width','720px')
+        })
+    })
+})
+
+
+$('.leftmsswiper ').each(function (i, e) {
+    $(e).click(function () {
+        proswiper[i].slidePrev()
+    });
+});
+$('.rightmsswiepr ').each(function (i, e) {
+    $(e).click(function () {
+        proswiper[i].slideNext()
+    });
+});
 
 // 名师结束
 
@@ -296,10 +341,6 @@ var certifySwiper = new Swiper('#certify .swiper-container', {
     loop: true,
     loopedSlides: 5,
     // autoplay: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
     pagination: {
         el: '#certify .swiper-pagination',
         //clickable :true,
@@ -333,6 +374,12 @@ var certifySwiper = new Swiper('#certify .swiper-container', {
         }
     }
 })
+$('.certifybtnleft').click(function () {
+    certifySwiper.slidePrev();
+})
+$('.certifybtnright').click(function () {
+    certifySwiper.slideNext();
+})
 // 作品开始
 
 
@@ -353,6 +400,8 @@ $('.mxslider4 ').each(function (i, e) {
 // 校园环境
 
 var huanswiper = new Swiper('.huancon_4 .swiper-container', {
+    loop: true,
+    autoplay: true,
     pagination: {
       el: '.huancon_4 .swiper-pagination',
     },

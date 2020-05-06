@@ -4,7 +4,17 @@ $maincolor: #C80700;
     width: 1200px;
     margin: 0 auto;
 }
-
+@mixin  fangda {
+    overflow: hidden;
+    & img {
+        transition: all .5s ease-out .1s;
+    }
+    &:hover img{
+        transform: matrix(1.04,0,0,1.04,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+}
 @mixin clearFix {
     &::after {
         clear: both;
@@ -75,7 +85,7 @@ html {
 
 .ih_1 {
     height: 30px;
-    background: #fff;
+    background: #FAFAFA;
     width: 1920px;
 
     margin: 0 auto;
@@ -100,7 +110,7 @@ html {
 .ih_4 {
     display: inline-block;
     width: 80px;
-    border-right: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
     color: #666666;
     font-size: 12px;
     text-align: center;
@@ -119,10 +129,12 @@ html {
     top: -228px;
     background: #fff;
     width: 84px;
-    left: -4px;
+    left: 0px;
     border: 1px solid #DCDCDC;
     border-top: none;
     color: #666666;
+    z-index: 10;
+    padding-bottom: 14px;
 }
 
 .ih_4:hover .ih_4con {
@@ -142,6 +154,7 @@ html {
 
 .ih_4con a {
     display: block;
+    height: 20px;
 }
 
 .ih_5con img {
@@ -163,6 +176,11 @@ html {
 
 .ih_5 .icon {
     width: 25px;
+}
+.ih_5 a {
+    position: relative;
+    top: -3px;
+    left: 1px;
 }
 
 .ih_6 {
@@ -205,8 +223,8 @@ html {
 }
 
 .ih_4 .icon {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     position: relative;
     top: -3px;
     color: #CCCCCC;
@@ -285,8 +303,10 @@ html {
 }
 
 .im_6icon1 {
-    width: 10px;
-    height: 16px;
+    width: 14px;
+    height: 19px;
+    position: relative;
+    top: 3px;
 }
 
 .im_6icon2 {
@@ -407,24 +427,25 @@ html {
     .imain_3 {
         display: inline-block;
         color: #333333;
-
+        padding-left: 10px;
         li {
             position: relative;
             width: 105px;
             display: inline-block;
-            font-weight: bold;
             height: 46px;
             text-align: center;
 
             .imain_6 {
                 line-height: 46px;
-                font-size: 14px;
+                font-size: 16px;
 
                 .icon {
                     height: 10px;
                     width: 20px;
                     color: #999999;
                     transform: rotate(180deg);
+                    position: relative;
+                    top: -2px;
                 }
             }
 
@@ -456,15 +477,28 @@ html {
                 top: -646px;
                 background-color: #fff;
                 font-size: 12px;
-                line-height: 22px;
+                line-height: 27px;
                 color: #666666;
-
+                font-weight: 500;
                 a {
                     display: block;
-
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width:10px;
+                        height:1px;
+                        background:rgba(102,102,102,1);
+                        position: relative;
+                        top: -3px;
+                        left: -3px;
+                    }
                     &:hover {
                         color: $maincolor;
+                        &::before {
+                            background-color: #C80700;
+                        }
                     }
+
                 }
             }
         }
@@ -475,7 +509,9 @@ html {
     width: 1920px;
     height: 525px;
     position: relative;
-
+    .swiper-slide img {
+        height: 525px;
+    }
     .swiper-pagination-bullet-active {
         background: #fff;
     }
@@ -503,11 +539,26 @@ html {
                 width: 47%;
                 text-align: center;
                 height: 28px;
-
+                position: relative;
+                span {
+                    width: 0px;
+                    border-bottom: 1px solid #C80700;
+                    text-align: center;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin:  0 auto;
+                    transition: width .3s linear;
+                }
                 &:hover {
                     color: #C80700;
                     font-weight: bold;
-                    border-bottom: 1px solid #C80700;
+                    // border-bottom: 1px solid #C80700;
+                   span {
+                       width: 85%;
+                   }
                 }
             }
 
@@ -548,8 +599,9 @@ html {
         display: inline-block;
         padding-top: 20px;
         padding-left: 30px;
-        margin-top: 35px;
-
+        margin-top:  35px ;
+        margin-bottom: 35px ;
+        
         background: #F5F7F9;
 
         &:hover {
@@ -616,6 +668,7 @@ html {
     float: left;
     height: 478px;
     margin-right: 6px;
+    box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.1);
 }
 
 .box3_3 {
@@ -910,7 +963,7 @@ html {
 #slider2 .slide {
     z-index: 10;
     position: absolute;
-    width: 720px;
+    width: 732px;
     height: 310px;
     overflow: hidden;
     top: 0;
@@ -967,15 +1020,15 @@ html {
 
 #slider .pp,
 #slider2 .pp {
-    width: 232px;
-    height: 260px;
+    width: 240px;
+    height: 100%;
     color: #fff;
-    background: #fa5349;
+    background: #C80700;
     position: absolute;
     left: 486px;
     top: 0;
     padding: 0 20px;
-
+    
 }
 
 #slider .pp dt,
@@ -983,9 +1036,36 @@ html {
     font-size: 22px;
     font-weight: bold;
     border-bottom: 1px solid #ff867f;
-    padding: 30px 0 5px 0;
+    padding: 30px 0 20px 0;
 }
-
+.pp4  {
+    display: inline-block;
+    width:33px;
+    height:33px;
+    border:1px solid rgba(255,255,255,1);
+    border-radius:50%;
+    text-align: center;
+    line-height: 33px;
+    color: #fff;
+    .icon {
+        width:15px;
+        height:18px;
+    }
+}
+.pp3 {
+    height:33px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    P:first-child{
+        font-size: 12px;
+    }
+    p:last-child {
+        font-size: 16px;
+    }
+    position: relative;
+    top: 7px;
+}
 #slider .pp dt span,
 #slider2 .pp dt span {
     font-size: 14px;
@@ -1063,6 +1143,22 @@ html {
         left: auto;
         width: 320px;
     }
+
+    .leftmsswiper {
+        left: auto;
+        top: auto;
+        right: 85px;
+        bottom: -64px;
+    }
+    .rightmsswiepr {
+        left: auto;
+        top: auto;
+        right: 30px;
+        bottom: -64px;
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .mingxuan {
@@ -1079,6 +1175,7 @@ html {
         color: $maincolor;
 
         p {
+            color: $maincolor;
             &:last-child {
                 width: 30px;
                 height: 2px;
@@ -1327,7 +1424,7 @@ html {
         right: 0;
         top: 0;
         text-align: center;
-        padding-top: 55px;
+        padding-top: 48px;
         .zhuangyuanbiao {
             width:34px;
             height:87px;
@@ -1386,7 +1483,7 @@ html {
 }
 
 .zuopinbox {
-    padding: 40px 0px 60px 0;
+    padding: 40px 0px 20px 0;
     background: #F5F7F9;
     width: 100%;
 }
@@ -1400,8 +1497,38 @@ html {
         position: relative;
         width: 1200px;
         margin: 0 auto
+        
     }
-
+    .certifybtn {
+        width:40px;
+        height:40px;
+        background:rgba(255,255,255,1);
+        border-radius:50%;
+        position: absolute;
+        z-index: 1000;
+        top: 263px;
+        left: 12px;
+        text-align: center;
+        line-height: 40px;
+        padding-top: 3px;
+        color: #C80700;
+        .icon {
+            width:15px;
+            height:20px;
+        }
+        &:hover {
+            background-color: #C80700;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .certifybtnright {
+        left: auto;
+        right: 12px;
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
     #certify .swiper-container {
         padding-bottom: 60px;
     }
@@ -1410,7 +1537,7 @@ html {
         width: 430px;
         height: 568px;
         background: #fff;
-        box-shadow: 0 8px 30px #ddd;
+        // box-shadow: 0 8px 30px #C80700;
     }
 
     #certify .swiper-slide img {
@@ -1558,7 +1685,7 @@ html {
 
             .zbs_2 {
                 padding: 15px;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 400;
                 color: rgba(68, 68, 68, 1);
             }
@@ -1611,16 +1738,19 @@ html {
         position: absolute;
         left: 0;
         top: 0;
-        width: 275px;
+        width: 290px;
         height: 100%;
 
         .huancon_2 {
             position: absolute;
             top: 0;
+            border: 8px solid #fff;
             width: 100%;
-            height: 211px;
+            height: 225px;
             left: 0;
             background: skyblue;
+            @include mainImg();
+            @include fangda();
         }
 
         .huancon_3 {
@@ -1635,12 +1765,12 @@ html {
         height: 100%;
         left: 300px;
         top: 0;
-        background: slateblue;
-
+            border: 8px solid #fff;
         .swiper-slide {
             width: 100%;
-            height: 446px;
             position: relative;
+            @include mainImg();
+            @include fangda();
         }
     }
 
@@ -1871,12 +2001,17 @@ html {
                 }
                 .rongm_3 {
                     width:100%;
-                    height:39px;
+                    height:45px;
                     font-size:14px;
                     font-weight:400;
                     color:rgba(153,153,153,1);
                     text-align: left;
                     line-height: 26px;
+                    overflow:hidden; 
+                    text-overflow:ellipsis;
+                    display:-webkit-box; 
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp:2; 
                 }  
                 .rongm_4ox {
                     width: 100%;
@@ -1952,28 +2087,7 @@ html {
             }
             
         }
-        .swiperbtn {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width:34px;
-            height:34px;
-            background:rgba(255,255,255,1);
-            border-radius:50%;
-            color: #999999;
-            text-align: center;
-            line-height: 34px;
-            z-index: 3;
-            .icon {
-                width:10px;
-                height:14px;
-            }
-            &:hover {
-                background: $maincolor;
-                color: #fff;
-                cursor: pointer;
-            }
-        }
+        
         .leftswiper {
             left: 196px;
             top: 40px;
@@ -2010,21 +2124,59 @@ html {
             width:182px;
             height:82px;
             border:1px solid rgba(238,238,238,1);
-            background: $maincolor;
             display: inline-block;
             margin-right: 10px;
             margin-top: 10px;
             text-align: center;
             position: relative;
             line-height: 82px;
+            position: relative;
+            transition: all .3s linear;
+            top: 0px;
             &:hover {
                 cursor: pointer;
+                img:first-child {
+                    opacity: 0;
+                }
+                img:last-child {
+                    opacity: 1;
+                }
+            top: -5px;
+                @include shadow();
             }
+            @include mainImg();
             img {
-                position: absolute; left: 50%; top: 50%;
-                transform: translate(-50%, -50%); 
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition:  all .5s linear;
+            }
+            img:last-child{
+                opacity: 0;
             }
         }
+    }
+}
+.swiperbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:34px;
+    height:34px;
+    background:rgba(255,255,255,1);
+    border-radius:50%;
+    color: #999999;
+    text-align: center;
+    line-height: 34px;
+    z-index: 3;
+    .icon {
+        width:10px;
+        height:14px;
+    }
+    &:hover {
+        background: $maincolor;
+        color: #fff;
+        cursor: pointer;
     }
 }
 .xinbox {
@@ -2436,6 +2588,7 @@ html {
     &:hover {
         cursor: pointer;
         color: #C80700;
+        background-color: #fff;
     }
     .icon {
         width: 33px;
@@ -2444,16 +2597,23 @@ html {
 }
 .lus_1active {
     color: #C80700;
+    background-color: #fff;
 }
 .lumaincon {
     display: none;
     padding-top: 50px;
     padding-bottom: 30px;
+    background-color: #fff;
 }
 .lumainswiper {
     padding: 0 20px;
     height: 40px;
-    .swiper-slide {height: 40px;}
+    .swiper-slide {height: 40px;
+    &:hover {
+        cursor: pointer;
+        color: #C80700;
+    }
+    }
     .swiper-slide-thumb-active {
         color: #C80700;
         .hongxian {
@@ -2511,6 +2671,7 @@ html {
 .dowebok {
     ul {
         overflow: hidden;
+        background: #fff;
         li {
             float: left;
             width: 147px;
@@ -2572,13 +2733,14 @@ html {
         .libbtn {
             display: inline-block;
             color: #fff;
-            height: 20px;
+            height: 30px;
             text-align: center;
-            line-height: 20px;
-            border-radius: 10px;
+            line-height: 30px;
+            border-radius: 15px;
+            font-size: 15px;
             width: 100px;
             border: 1px solid #fff;
-            margin-top: 20px;
+            margin-top: 30px;
         }
     }  
 }
@@ -2595,16 +2757,128 @@ html {
 .huancon {
     display: none;
 }
+.stucon {
+    display: none;
+}
+.zhibocon {
+    display: none;
+}
+
+.bycmain {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 315px;
+}
+
+.bycmain li {
+    width: 235px;
+    height: 310px;
+    margin-right: 5px;
+    float: left;
+    border-left: 1px solid #fff;
+    position: relative;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.bycmain li:nth-child(5n) {
+    margin-right: 0px;
+}
+.bycmain li>img {
+    width: 236px;
+    height: 310px;
+}
+
+.flag {
+    position: absolute;
+    right: 0;
+    /* top: -2800px; */
+    left: 236px;
+    top: 0;
+    width: 490px;
+    height: 100%;
+    color: #fff;
+    background: #C80700;
+}
 
 
 
+.bycmain li:hover {
+    width: 720px;
+}
+
+.bycmain li:hover .flag {
+    width: 490px;
+}
 
 
+.demo2 {
+    overflow: hidden;
+    width: 1200px;
+    margin: 150px auto;
+}
 
+.bycmainp {
+    width: 245px;
+    margin-right: 50px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    display: block;
+    background: url('../img/bg2222.jpg') no-repeat 0 0 /100% 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 50px 27px;
+    img {
+        margin-bottom: 25px;
+    }
+}
+.bycmainpp {
+    width: 246px;
+    height: 100%;
+    color: #fff;
+    background: #C80700;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 15px;
+    padding-top: 15px;
+}
 
+.bycmainp p {
+    width: 190px;
 
+}
+.bycmainpp2 {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #ff867f;
+    padding: 30px 0 20px 0;
+    width: 210px;
+}
 
+.morebtn1 {
+    display: inline-block;
+    width:73px;
+    height:31px;
+    border:1px solid rgba(255,255,255,1);
+    color: #fff;
+    font-size: 12px;
+    line-height: 31px;
+    text-align: center;
+    background-color: #C80700;
+    position: absolute;
+    right: 21px;
+    top: 242px;
+}
 
+.pp2 {
+    margin-top: 10px;
+}
 
 
 
