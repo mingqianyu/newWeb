@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百叶窗纯css效果 手风琴效果</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./baiyechaung3.css">
+</head>
+
+<body>
+    
+    <div class="demo2">
+                        
+                        <ul class="bycmain">
+                            <li>
+                                <img src="./img/t3.png" alt="">
+                                <div class="flag">你很迷人</div>
+                            </li>
+                            <li>
+                                <img src="./img/t3.png" alt="">
+                                <div class="flag">你很迷人</div>
+                            </li>
+                            <li>
+                                <img src="./img/t3.png" alt="">
+                                <div class="flag">你很迷人</div>
+                            </li>
+                            <li>
+                                <img src="./img/t3.png" alt="">
+                                <div class="flag">你很迷人</div>
+                            </li>
+                            <li>
+                                <img src="./img/t3.png" alt="">
+                                <div class="flag">你很迷人</div>
+                            </li>
+                            
+                            
+                        </ul>
+                
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/JQ.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script> 
+<script>
+    $('.bycmain').on('mouseleave',function() {
+        $('.bycmain li').css('width','236px')
+    })
+    $('.bycmain').each(function(i,e) {
+        let liarr =  $(e).children('li');
+        $(e).children('li').each(function(i,e) {
+            $(e).on('mouseenter',function() {
+                liarr.css('width','115px')
+                $(this).css('width','720px')
+            })
+        })
+    })
+</script>

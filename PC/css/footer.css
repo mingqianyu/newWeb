@@ -64,7 +64,7 @@
     width: 150px;
 }
 .f1input1 .icon {
-    height: 23px;
+    height: 21px;
     width: 20px;
     margin-top: 5px;
     margin-left: 10px;
@@ -74,7 +74,8 @@
     color: #fff;
     position: relative;
     top: -4px;
-    width: 112px;
+    left: -6px;
+    width: 120px;
 }
 .f1input2 {
     color: #fff;
@@ -201,6 +202,10 @@ background: #999;opacity: .6;
     transition: all .3s linear;
     font-size: 16px;
 }
+.ftqqa .icon {
+    width: 21px;
+    height: 21px;
+}
 .ftqqa:hover {
     display: inline-block;
     width: 160px;
@@ -228,6 +233,10 @@ background: #999;opacity: .6;
     color: #666666;
     font-size: 13px;
     overflow: hidden;
+}
+.nfriendlink .icon {
+    width: 19px;
+    height: 14px;
 }
 .nfriendlink p{
     float: left;

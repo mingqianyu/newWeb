@@ -1,0 +1,579 @@
+.adbox {
+    width:1200px;
+    height:100px;
+    margin-top: 16px;
+    background: rgba(0, 0, 0, .12)
+}
+.adbox img {width: 100%;height: 100%;}
+.coursedetail {
+    width:1200px;
+    height:358px;
+    background:rgba(0,0,0,.3);
+    border-radius:10px;
+    overflow: hidden;
+    background: url('../images/coursedeimg.jpg') no-repeat 0  0 /100% 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #fff;
+}
+.breadcrumbs {
+    margin: 40px 0 15px 0;
+    color: #999999;
+}
+.breadcrumbs  a {
+    color: #999;
+}
+.curdet1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.curdet1 span:last-child {
+    display: inline-block;
+    background: linear-gradient(to right,transparent , #ADB1B6);
+    width:278px;
+height:20px;
+    border-radius: 10px;
+    font-size: 13px; 
+    color: #fff;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 19px;
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+}
+.curdet2 {
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 24px;
+}
+.curdet3 {
+    line-height: 24px;
+    margin-top: 5px;
+}
+.curdet3 span:first-child {
+    display: inline-block;
+    width: 250px;
+}
+.detailxian {
+    width:849px;
+    height:1px;
+    background:rgba(255,255,255,1);
+    opacity:.5;
+    margin-top: 40px;
+}
+.curdet4 {
+    margin-top: 20px;
+    overflow: hidden;
+    height: 70px;
+    width: 849px;;
+}
+.curte4title {
+    font-size:  18px;
+    line-height: 70px;
+    color: #fff;
+    float: left;
+}
+.teacherswiper {
+    float: right;
+    width: 750px;
+    height: 100%;
+}
+.curslider {
+    width: 230px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.curslider img {
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    float: left;
+    margin-right: 15px;
+}
+.curslider p:nth-child(2) {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.curslider p:nth-child(3) {
+    font-size: 13px;
+    margin-top: 5px;
+}
+.swiper-button-next, .swiper-button-prev {
+    background-size: 10px 18px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{right: 0px}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{left: 0;}
+.rightSidebar {
+    top: 255px;
+}
+.rs1_1 {
+    color: #fff;
+    font-size: 18px;
+    border-left: 4px solid #7D8690;
+}
+.rs1_con {
+    padding-left: 0;
+    background: transparent;
+    border: none;
+    padding-top: 0;
+}
+.rs1_inputbox {
+    border: none;
+}
+.csMaincon {
+    width: 889px;
+    margin-top: 40px;
+}
+.csd1 {
+    height: 50px;
+    color: #666666;
+    font-size: 14px;
+    background: #F0F0F0;
+    line-height: 50px;
+    text-align: center;
+}
+.csdslder {
+    display: inline-block;
+    width: 19.6%;
+}
+.activecsd {
+    color: #fff;
+    background: url('../images/redbg.jpg') no-repeat 0 0 / 100% 100%;
+    height: 56px;
+}
+.csdslder:hover {
+    color: #fff;
+    background: url('../images/redbg.jpg') no-repeat 0 0 / 100% 100%;
+    height: 56px;
+}
+.csdcontent {
+    display: none;
+    padding: 40px 30px 60px 40px;
+    color: #666666;
+    font-size: 14px;
+    border: 1px solid #DBDBDB;
+}
+.morencsd {
+    display: block;
+}
+.csd1_1 {
+    border-left: 8px solid #b20000;
+    height: 19px;
+    font-size: 24px;
+    color: #2b2b2b;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.csd1_1 p {
+    position: relative;
+    top: -7px;
+}
+.csd1_2 {
+    line-height: 25px;
+}
+.csd1_3 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #2b2b2b;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.csd1_3 .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+.mr8 {margin-right: 8px;}
+
+.xuxian {
+    border-top: 1px dashed #b20000;
+    margin: 38px 0;
+}
+.csd1_5 {
+    margin-top: 40px;
+}
+.csdswiper {
+    height: 310px;
+    width: 100%;
+    position: relative;
+    /* padding:0 10px; */
+}
+.teacher1_3 {
+    width: 194px;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+}
+
+.teacher1_3:hover .tecfooter {
+    height: 100%;
+}
+
+.teacher1_3 img {
+    width: 194px;
+}
+
+.tecfooter {
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    bottom: 0;
+    padding: 13px 16px;
+    transition: all .5s ease-out .1s;
+    text-align: left;
+    color: #fff;
+}
+.tecfp1 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.tecfp2 {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 9px 0px 17px 0px;
+    color: #F5F5F5;
+}.tecfp3 {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    line-height: 24px;
+    text-overflow: ellipsis;
+}
+.xian {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    opacity: .5;
+}
+.texbtn {
+    width: 100px;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    height: 24px;
+    background: rgba(178, 0, 0, 1);
+    border-radius: 12px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+.swiperleftarrow {
+    width:34px;
+    height:34px;
+    background:rgba(255,255,255,1);
+    border:1px solid #b20000;
+    border-radius:50%;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 10;
+    left: -17px;
+}
+.swiperleftarrow .icon {
+    transform:rotate(-180deg);
+    margin-left: -3px;
+}
+.swiperrightarrow {
+    width:34px;
+    height:34px;
+    background:rgba(255,255,255,1);
+    border:1px solid #b20000;
+    border-radius:50%;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 10;
+    right: -17px;
+}
+.swiperrightarrow:hover {
+    background: #b20000;
+}
+.swiperrightarrow:hover .icon{
+    color: #fff;
+}
+.swiperleftarrow:hover {
+    background: #b20000;
+}
+.swiperleftarrow:hover .icon{
+    color: #fff;
+}
+
+.allboxslider {
+    width: 100%;
+    height: 100%;
+}
+
+
+.aboutul li {
+    width: 260px;
+    height: 157px;
+    margin: 0;
+}
+
+.aboutul li:nth-child(3n+3) {
+    margin-top: 16px;
+}
+
+.aboutul li:nth-child(5) {
+    margin-top: -156px;
+}
+
+.aboutul {
+    padding-top: 10px;
+}
+
+.aboutul .aboutimgcenter {
+    width: 260px;
+    height: 330px;
+    background: rgba(0, 0, 0, 1);
+    margin: 0 16px;
+    margin-top: -157px;
+}
+.workssliderCon {
+    width: 264px;
+    height: 157px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 17px;
+    overflow: hidden;
+    position: relative;
+}
+.workssliderCon:hover .worksp {
+    top: 0px;
+}
+.worksp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+    top: 157px;
+    padding-top: 48px;
+    transition: all .3s ease-out .1s;
+}
+
+.worksp p {
+    font-size: 14px;
+}
+
+.worksp .icon {
+    font-size: 27px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.workssliderCon:hover .worksp {
+    top: 0px;
+}
+.aboutimgcenter .worksp {
+    top: 330px;
+    padding-top: 120px;
+}
+.csd1_9 {
+    height: 230px;
+    background: url('../images/bacxian.jpg') no-repeat 0 71px ;
+    position: relative;
+}
+.csd1_10 {
+    position: relative;
+    left: 0;
+    top: 30px;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+}
+.csd1_10 span {
+    width:86px;
+height:86px;
+background:rgba(240,240,240,1);
+border-radius:50%;
+display: inline-block;
+padding-top: 24px;
+
+}
+.csd1_10 .icon {
+    width: 32px;
+    height: 38px;
+}
+.csd1_10 p:nth-child(2) {
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 11px 0;
+}
+.csd1_10:hover .icon {
+    color: #fff;
+}
+.csd1_10:hover span {
+    background: #b20000;
+}
+.csd1_11 {
+    left: 235px;
+    top: -82px;
+}
+.csd1_12 {
+    left: 446px;
+    top: -266px;
+}
+.csd1_13 {
+    left: 661px;
+    top: -386px;
+}
+
+.csd2_2 {
+    margin-top: 50px;
+}
+.csd2_4 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+}
+.csd2_3 p:nth-child(2) {
+    color: #3D3D3D;
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+    font-weight: bold;
+}
+.csd2_3 {
+    width:284px;
+    height:280px;
+    float: left;
+    transition: all .3s ease-out .1s;
+    position: relative;
+    top: 0;
+}
+.csd2_3:hover {
+    top: -3px;
+box-shadow:-2px 3px 12px 0px rgba(0, 0, 0, 0.06);
+
+}
+.csd2_3 img {
+    width: 100%;
+    height: 190px;
+}
+.csd2_5 {
+    margin-left: 17px;
+}
+
+.mainclear {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

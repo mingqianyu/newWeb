@@ -1,0 +1,187 @@
+
+.item_content img {
+    width:273px;
+    height: auto;
+}
+.workp {
+    font-size: 16px;
+    color: #212121;
+}
+.work1 {
+    padding: 16px 15px 0px 15px;
+    border:1px solid rgba(230, 230, 230, 1);
+    margin-top: -5px;
+
+    overflow: hidden;
+}
+.work1_btn {
+    width:153px;
+    height:26px;
+    background:rgba(247,247,247,1);
+    border-radius:13px;   
+font-size:13px;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:#666666;
+line-height:22px;
+opacity:0.9;
+text-align: center;
+margin-top: 18px;
+margin-bottom: 20px;
+}
+.works1_2 .icon{
+    color: #B3B3B3;
+    width: 16px;
+    position: relative;
+    top: 3px;
+}
+.works1_2 span {
+    margin-left: 3px;
+}
+.works1_2 span:last-child {
+    float: right;
+    position: relative;
+    top: 6px;
+    color: #B3B3B3;
+    font-size: 14px;
+}
+.iconxin {
+    margin-left: 16px;
+}
+.item:hover {
+    box-shadow:0px 6px 12px 0px rgba(0, 0, 0, 0.12);
+    top: -3px;
+}
+
+
+.tl1 {
+    width: 890px;
+    height: 63px;
+    border-bottom: 1px solid #F0F0F0;
+    overflow: hidden;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #666666;
+}
+.course1_1 {
+}
+.tl1 a {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    color: #666;
+    padding: 7px 13px; 
+    border-radius: 13px;
+    height: 26px;
+    line-height: 13px;
+    position: relative;
+    top: -3px;
+}
+.tl1 p {
+        color: #2B2B2B;
+        font-weight: bold;
+        float: left;
+}
+
+.ared {
+    background: #b20000;
+    color: #fff !important;
+}
+.ared2 {
+    background: #b20000;
+    color: #fff !important;
+}
+.ared1 {
+    background: #b20000;
+    color: #fff !important;
+}
+.item {
+    width:273px;
+background:rgba(255,255,255,1);
+float: left;
+border:1px solid rgba(247, 247, 247, 1);
+margin-left: 25px;
+position: relative;
+top: 0;
+transition: all .3s linear;
+margin-top: 30px;
+}
+.masonry {
+    width: 890px;
+    overflow: hidden;
+    padding: 10px;
+    padding-top: 10px;
+}
+.masonry .item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.works1_2 {
+    position: relative;
+    top: 50px;;
+}
+.pageno {
+    margin-top: 50px;
+}
+.videoRight {
+    float: right;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #9D9D9D;
+}
+.videoRight .icon {
+    color: #9D9D9D;
+    position: relative;
+    top: -1px;
+    right: 5px;
+    width: 16px;
+    height: 12px;
+}
+
+.work1_btn .icon {
+    width: 14px; height: 14px;
+    color: #666666;
+}
+.dialogMain {
+    width:999px;
+height:592px;
+background: #fff;
+margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -500px;
+}
+.videoDialog {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto ;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.32);
+        display: none;
+}
+
+.my-player ,.video-js{
+    width: 100%;
+    height: 100%;
+}
+
+.hideVideo {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
