@@ -31,11 +31,12 @@ $("body").scroll(function (event) {
 
 $(function() {
     setTimeout(function() {
-        $('.ih_4con').css('height','auto')
+        $('.ih_5con').css('height','auto')
         $('.imain_6con').css('height','auto')
     },1000)
 })
 $('.ih_4con').slideUp()
+$('.ih_5con').slideUp()
 $('.imain_6con').slideUp()
 $('.ih_4').each(function(i,e) {
     $(e).on('mouseenter',function() {
@@ -51,12 +52,33 @@ $('.ih_4').each(function(i,e) {
         $('.ih_4con').eq(i).slideUp()
     })
 })
+$('.ih_5').each(function(i,e) {
+    $(e).on('mouseenter',function() {
+        console.log('进入',i)
+        $('.ih_5con').stop()
+        $('.ih_5con').slideUp()
+        $('.ih_5con').eq(i).slideDown()
+    })
+    $(e).on('mouseleave',function() {
+        $('.ih_5con').stop()
+        // $('.ih_4con').slideUp()
+        // console.log('leave',i)
+        $('.ih_5con').eq(i).slideUp()
+    })
+})
 $('.ih_2').on('mouseleave',function() {
     // console.log('离开父级')
     $('.ih_4con').stop()
     $('.ih_4con').stop()
     $('.ih_4con').stop()
     $('.ih_4con').slideUp()
+})
+$('.ih_3').on('mouseleave',function() {
+    // console.log('离开父级')
+    $('.ih_5con').stop()
+    $('.ih_5con').stop()
+    $('.ih_5con').stop()
+    $('.ih_5con').slideUp()
 })
 $('.imain_3 li').each(function(i,e) {
     $(e).on('mouseenter',function() {
@@ -85,7 +107,7 @@ $('.bycmain').each(function (i, e) {
     $(e).children('li').each(function (i, e) {
         $(e).on('mouseenter', function () {
             liarr.css('width', '115px')
-            $(this).css('width', '720px')
+            $(this).css('width', '719px')
         })
     })
 })

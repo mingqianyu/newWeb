@@ -1,8 +1,7 @@
 @charset "UTF-8";
 .allbox {
   width: 1920px;
-  /* margin:  0 auto; */
-  height: 10000px; }
+  /* margin:  0 auto; */ }
 
 .index_ad {
   width: 1920px;
@@ -61,11 +60,11 @@ html {
   position: absolute;
   top: 28px;
   background: #fff;
-  width: 80px;
+  width: 81px;
   height: 0px;
   overflow: hidden;
   border: 1px solid #DCDCDC;
-  left: 0px;
+  left: -1px;
   border-top: none;
   color: #666666;
   z-index: 10; }
@@ -124,15 +123,19 @@ html {
 
 .ih_5con {
   position: absolute;
-  top: -228px;
+  top: 29px;
+  height: 0;
+  left: -1px;
   background: #fff;
-  padding-top: 10px;
-  width: 93px;
-  border: 1px solid #DCDCDC;
-  border-top: none; }
+  width: 95px;
+  border-top: none;
+  overflow: hidden; }
 
 .ih_5:hover .ih_5con {
-  top: 28px; }
+  border: 1px solid #DCDCDC; }
+
+.ih_5con img {
+  margin-top: 10px; }
 
 .ih_6con {
   width: 103px; }
@@ -202,7 +205,6 @@ html {
   text-align: center;
   position: relative; }
   .im_6:hover {
-    border: 1px solid #DDD;
     border-bottom: none; }
     .im_6:hover .im_6con {
       height: 121px;
@@ -215,13 +217,18 @@ html {
   top: 3px; }
 
 .im_6icon2 {
-  width: 6px;
-  height: 11px; }
+  width: 10px;
+  height: 11px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 5px;
+  position: relative;
+  top: -1px; }
 
 .im_6con {
   position: absolute;
   line-height: 26px;
-  top: 65px;
+  top: 55px;
   left: 0;
   background: #fff;
   text-align: left;
@@ -241,7 +248,8 @@ html {
   margin-left: 15px; }
 
 .im_6:hover .im_6con {
-  top: 67px; }
+  top: 55px;
+  border-top: 2px solid #C80700; }
 
 .im_6slideractive {
   border-bottom: 1px solid #C80700;
@@ -265,8 +273,8 @@ html {
   color: #C80700; }
 
 .im_6:hover .im_6icon2 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg); }
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
 
 .if_1 {
   float: left;
@@ -421,7 +429,7 @@ html {
         .swiperBox .swipercaidan .caidan_3 a:hover {
           color: #C80700; }
           .swiperBox .swipercaidan .caidan_3 a:hover span {
-            width: 85%; }
+            width: 50%; }
       .swiperBox .swipercaidan .caidan_3 .caidan_4 {
         display: inline-block;
         width: 32%; }
@@ -973,11 +981,11 @@ html {
   height: 610px; }
   .stubox .stuconleftmsswiper {
     left: 550px;
-    top: 25px;
+    top: 0px;
     background: #f4f4f4; }
   .stubox .stuconrightmsswiepr {
     left: 600px;
-    top: 25px;
+    top: 0px;
     background: #f4f4f4; }
     .stubox .stuconrightmsswiepr .icon {
       -webkit-transform: rotate(180deg);
@@ -1061,7 +1069,7 @@ html {
     height: 350px;
     background: black;
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 0;
     z-index: 2; }
     .studetail .studvideo video {
@@ -1071,11 +1079,11 @@ html {
     width: 700px;
     height: 343px;
     background: white;
-    -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
     position: absolute;
     right: 10px;
-    bottom: 10px; }
+    bottom: 4px;
+    -webkit-box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.1); }
   .studetail .icon {
     color: #C80700;
     height: 22px;
@@ -1743,8 +1751,8 @@ html {
       .hebox .hecon .hecon_1:hover {
         cursor: pointer;
         top: -5px;
-        -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
-                box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1); }
+        -webkit-box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.1); }
         .hebox .hecon .hecon_1:hover img:first-child {
           opacity: 0; }
         .hebox .hecon .hecon_1:hover img:last-child {
@@ -1880,7 +1888,7 @@ html {
 .xinmain {
   display: none; }
   .xinmain .xinmainright {
-    color: #333;
+    color: #999;
     line-height: 43px;
     font-size: 13px; }
     .xinmain .xinmainright .xinr_1 {
@@ -1934,7 +1942,6 @@ html {
         margin-top: 10px; }
       .xinmain .xinsbox .xinsbox_2 .xinsbox_6 {
         font-size: 13px;
-        font-family: Source Han Sans CN;
         font-weight: 300;
         color: #999999;
         line-height: 20px;

@@ -54,7 +54,7 @@ $maincolor: #C80700;
 .allbox {
     width: 1920px;
     /* margin:  0 auto; */
-    height: 10000px;
+    // height: 10000px;
 }
 
 .index_ad {
@@ -129,11 +129,11 @@ html {
     position: absolute;
     top: 28px;
     background: #fff;
-    width: 80px;
+    width: 81px;
     height: 0px;
     overflow: hidden;
     border: 1px solid #DCDCDC;
-    left: 0px;
+    left: -1px;
     // transition: height .3s linear;
     border-top: none;
     color: #666666;
@@ -204,17 +204,21 @@ html {
 
 .ih_5con {
     position: absolute;
-    top: -228px;
+    // top: -228px;
+    top: 29px;
+    height: 0;
+    left: -1px;
     background: #fff;
-    padding-top: 10px;
-    width: 93px;
-    border: 1px solid #DCDCDC;
+    width: 95px;
     border-top: none;
-
+    overflow: hidden;
 }
 
 .ih_5:hover .ih_5con {
-    top: 28px;
+    border: 1px solid #DCDCDC;
+}
+.ih_5con img {
+    margin-top: 10px;
 }
 
 .ih_6con {
@@ -296,7 +300,7 @@ html {
     position: relative;
 
     &:hover {
-        border: 1px solid #DDD;
+        // border: 1px solid #DDD;
         border-bottom: none;
 
         .im_6con {
@@ -315,14 +319,18 @@ html {
 }
 
 .im_6icon2 {
-    width: 6px;
+    width: 10px;
     height: 11px;
+    transform: rotate(180deg);
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
 }
 
 .im_6con {
     position: absolute;
     line-height: 26px;
-    top: 65px;
+    top: 55px;
     left: 0;
     background: #fff;
     text-align: left;
@@ -344,7 +352,8 @@ html {
 }
 
 .im_6:hover .im_6con {
-    top: 67px;
+    top: 55px;
+    border-top: 2px solid #C80700;
 }
 
 .im_6slideractive {
@@ -374,7 +383,7 @@ html {
 }
 
 .im_6:hover .im_6icon2 {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 .if_1 {
@@ -573,7 +582,7 @@ html {
                     // font-weight: bold;
                     // border-bottom: 1px solid #C80700;
                    span {
-                       width: 85%;
+                       width: 50%;
                    }
                 }
             }
@@ -1276,12 +1285,12 @@ html {
     height: 610px;
     .stuconleftmsswiper {
         left: 550px;
-        top: 25px;
+        top: 0px;
         background: #f4f4f4;
     }
     .stuconrightmsswiepr {
         left: 600px;
-        top: 25px;
+        top: 0px;
         background: #f4f4f4;
         .icon {
             transform: rotate(180deg);
@@ -1395,7 +1404,7 @@ html {
         height: 350px;
         background: rgba(0, 0, 0, 1);
         position: absolute;
-        top: 15px;
+        top: 0px;
         left: 0;
             z-index: 2;
         video {
@@ -1408,10 +1417,11 @@ html {
         width: 700px;
         height: 343px;
         background: rgba(255, 255, 255, 1);
-        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
         position: absolute;
         right: 10px;
-        bottom: 10px;
+        bottom: 4px;
+        box-shadow: 0px 1px 10px 3px rgba(0,0,0, .1);
     }
 
     .icon {
@@ -2218,7 +2228,9 @@ html {
                     opacity: 1;
                 }
                 top: -5px;
-                box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+                // box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 1px 10px 3px rgba(0,0,0, .1);
+
             }
             @include mainImg();
             img {
@@ -2374,7 +2386,7 @@ html {
     display: none;
 
     .xinmainright {
-        color: #333;
+        color: #999;
         line-height: 43px;
         font-size: 13px;
         .xinr_1 {
@@ -2438,7 +2450,6 @@ html {
             }
             .xinsbox_6 {
                 font-size:13px;
-                font-family:Source Han Sans CN;
                 font-weight:300;
                 color:rgba(153,153,153,1);
                 line-height:20px;

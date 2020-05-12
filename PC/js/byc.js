@@ -159,3 +159,8 @@ var slider = function() {
 	}
 
 }();
+
+
+
+
+
