@@ -32,12 +32,11 @@ $("body").scroll(function (event) {
 $(function() {
     setTimeout(function() {
         $('.ih_5con').css('height','auto')
+        $('.ih_4con').css('height','auto')
         $('.imain_6con').css('height','auto')
     },1000)
 })
 $('.ih_4con').slideUp()
-$('.ih_5con').slideUp()
-$('.imain_6con').slideUp()
 $('.ih_4').each(function(i,e) {
     $(e).on('mouseenter',function() {
         console.log('进入',i)
@@ -52,6 +51,15 @@ $('.ih_4').each(function(i,e) {
         $('.ih_4con').eq(i).slideUp()
     })
 })
+
+$('.ih_2').on('mouseleave',function() {
+    // console.log('离开父级')
+    $('.ih_4con').stop()
+    $('.ih_4con').stop()
+    $('.ih_4con').stop()
+    $('.ih_4con').slideUp()
+})
+
 $('.ih_5').each(function(i,e) {
     $(e).on('mouseenter',function() {
         console.log('进入',i)
@@ -66,13 +74,10 @@ $('.ih_5').each(function(i,e) {
         $('.ih_5con').eq(i).slideUp()
     })
 })
-$('.ih_2').on('mouseleave',function() {
-    // console.log('离开父级')
-    $('.ih_4con').stop()
-    $('.ih_4con').stop()
-    $('.ih_4con').stop()
-    $('.ih_4con').slideUp()
-})
+
+// 哈哈
+$('.ih_5con').slideUp()
+
 $('.ih_3').on('mouseleave',function() {
     // console.log('离开父级')
     $('.ih_5con').stop()
@@ -80,6 +85,8 @@ $('.ih_3').on('mouseleave',function() {
     $('.ih_5con').stop()
     $('.ih_5con').slideUp()
 })
+// 二维码
+$('.imain_6con').slideUp()
 $('.imain_3 li').each(function(i,e) {
     $(e).on('mouseenter',function() {
         $('.imain_6con').stop()
@@ -98,6 +105,7 @@ $('.imain_3').on('mouseleave',function() {
     $('.imain_6con').stop()
     $('.imain_6con').slideUp()
 })
+
 
 $('.bycmain').on('mouseleave', function () {
     $('.bycmain li').css('width', '236px')

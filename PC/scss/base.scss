@@ -1,0 +1,54 @@
+$maincolor: #C80700;
+
+@mixin autocenter {
+    width: 1200px;
+    margin: 0 auto;
+}
+@mixin  fangda {
+    overflow: hidden;
+    & img {
+        transition: all .5s ease-out .1s;
+    }
+    &:hover img{
+        transform: matrix(1.04,0,0,1.04,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+}
+@mixin clearFix {
+    &::after {
+        clear: both;
+        content: ".";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+@mixin   morebtn{
+        display: inline-block;
+        width:73px;
+        height:31px;
+        border:1px solid rgba(153,153,153,1);
+        font-size:12px;
+        font-weight:500;
+        color:rgba(51,51,51,1);
+        line-height: 31px;
+        text-align: center;
+        &:hover {
+            border:1px solid #C80700;
+            background: #C80700;
+            color: #fff;
+            cursor: pointer;
+        }
+}
+@mixin  mainImg {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@mixin  shadow {
+    box-shadow: 0px 1px 10px 3px rgba(0,0,0, .1);
+
+}
