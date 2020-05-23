@@ -1,0 +1,219 @@
+@import "./base.scss";
+
+
+
+.pageTitle {
+    @include autocenter();
+    font-size:13px;
+    color:rgba(153,153,153,1);
+    margin-top: 80px;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 10px;
+    span {
+        // margin:  0 6px;
+    }
+    a {
+        &:hover {
+            color: #C80700;
+        }
+    }
+}
+
+.bannerbox {
+    width:1139px;
+    height:69px;
+    background:#ffff;
+    box-shadow:0px 0px 20px 0px rgba(52,52,52,0.13);
+    border-radius:10px;
+    margin:  0 auto;
+    position: relative;
+    top: -35px;
+    overflow: hidden;
+    div  {
+        float: left;
+        width: 24.9%;
+        line-height: 69px;
+        text-align: center;
+        color: #999999;
+        font-size: 18px;
+    }
+    .banneractive {
+        color: #C80700;
+        & p:last-child {
+            width:53px;
+            height:3px;
+            background:rgba(200,7,0,1);
+            display: inline-block;
+            position: relative;
+            top: -40px;
+        }
+    }
+}
+
+.videoCon {
+    display: none;
+    @include autocenter();
+    margin-top: 40px;
+    overflow: hidden;
+    width: 1220px;
+    margin-bottom: 50px;
+    position: relative;
+    left: -10px;
+    padding: 10px;
+    .video_1 {
+        width:284px;
+        height:344px;
+        border:1px solid rgba(227,228,229,1);
+        border-radius:5px;
+        background-color: #fff;
+        position: relative;
+        margin-top: 20px;
+        margin-right: 20px;
+        transition: all .3s linear ;
+        float: left;
+        top: 0;
+        &:hover {
+            box-shadow: 0px 1px 10px 3px rgba(0,0,0, .1);
+            top: -5px;
+        }
+    }
+    & .video_1:nth-child(4n) {
+        margin-right: 0px;
+    }
+    .video_2 {
+        width: 100%;
+        @include mainImg();
+    }
+    .video_3 {
+        width: 100%;
+    }
+    .videoheader {
+        padding: 15px 20px ;
+    }
+    .video_title {
+        font-size:18px;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+        margin-bottom: 15px;
+    }
+    .video_4 {
+        font-size:14px;
+        margin-top: 5px;
+        color:rgba(153,153,153,1);
+    }
+    .videofooter {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 48px;
+        border-top: 1px solid #E3E4E5;
+        overflow: hidden;
+        line-height: 48px;
+        padding: 0 20px;
+        color: #666666;
+        font-size: 14px;
+        .videofooter1 {
+            float: left;
+            .videoicontou {
+                width:20px;
+                height:20px;
+                border-radius:50%;
+                background-color: slateblue;
+                float: left;
+                position: relative;
+                top: 13px;
+                margin-right: 6px;
+            }
+        }
+        .videofooter2 {
+            float: right;
+        }
+    }
+}
+body {
+    background-color: #F5F7F9;
+}
+
+
+.index_header {
+    background-color: #fff;
+}
+.pagetionbox {
+    @include autocenter();
+    text-align: center;
+    margin-bottom: 100px;
+    li {
+        display: inline-block;
+        margin: 0 20px;
+        width:36px;
+        height:35px;
+        border:1px solid rgba(204,204,204,1);
+        border-radius:4px;
+        text-align: center;
+        line-height: 35px;
+        color: #999999;
+        font-size: 14px;
+        &:hover {
+            background-color: #C80700;
+            color: #fff;
+            border: 1px solid #C80700;
+            // transform:scaleX(1.2);
+            transform:scale(1.2);
+            cursor: pointer;
+        }
+    }
+    div {
+        display: inline-block;
+        font-size:14px;
+        font-weight:400;
+        color:rgba(153,153,153,1);
+        &:hover {
+            color: #C80700;
+            cursor: pointer;
+        }
+    }
+    
+}
+.page1 {
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    color:rgba(153,153,153,1);
+    margin: 0 0px;
+    &:hover {
+        color: #C80700;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.moren {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+

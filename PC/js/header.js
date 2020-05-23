@@ -1,38 +1,4 @@
-// swiper
-var lunswiper = new Swiper('.tbox4_1 .swiper-container', {
-    slidesPerView: 5,
-    // spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    pagination: {
-      el: '.tbox4_1 .swiper-pagination',
-      clickable: true,
-      type: 'progressbar'
-    },
-  });
-  $('.sleftbtn').click(function () {
-    lunswiper.slidePrev()
-})
 
-$('.srightbtn').click(function () {
-    lunswiper.slideNext()
-})
-
-
-
-// 百叶窗
-$('.bycmain').on('mouseleave', function () {
-    $('.bycmain li').css('width', '236px')
-})
-$('.bycmain').each(function (i, e) {
-    let liarr = $(e).children('li');
-    $(e).children('li').each(function (i, e) {
-        $(e).on('mouseenter', function () {
-            liarr.css('width', '115px')
-            $(this).css('width', '719px')
-        })
-    })
-})
 
 
 

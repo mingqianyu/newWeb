@@ -1,0 +1,317 @@
+.allbox {
+  width: 1920px; }
+
+body {
+  overflow-x: hidden;
+  background-color: #F5F7F9; }
+
+.mainbanner {
+  width: 1920px;
+  height: 478px;
+  position: relative; }
+  .mainbanner .mbanner {
+    position: absolute;
+    left: 360px;
+    width: 1200px;
+    top: 0;
+    height: 100%; }
+    .mainbanner .mbanner .mb1 {
+      width: 328px;
+      height: 478px;
+      background: linear-gradient(-7deg, #eb221b, #c80700, #c80700);
+      position: absolute;
+      top: 40px;
+      right: 0;
+      padding: 35px;
+      color: #fff;
+      font-size: 30px; }
+    .mainbanner .mbanner .mb2 {
+      width: 865px;
+      height: 465px;
+      position: absolute;
+      bottom: -20px;
+      left: 40px; }
+      .mainbanner .mbanner .mb2 img {
+        width: 100%;
+        height: 100%; }
+  .mainbanner .mb1_2 {
+    width: 53px;
+    height: 3px;
+    background: white;
+    margin: 20px 0;
+    display: inline-block; }
+  .mainbanner .mb1_3 {
+    font-weight: bold;
+    font-size: 45px; }
+  .mainbanner .mb1_4 {
+    font-size: 16px;
+    margin-top: 85px;
+    line-height: 26px; }
+  .mainbanner .trantion2 {
+    animation-delay: 0.2s; }
+  .mainbanner .trantion3 {
+    animation-delay: 0.3s; }
+  .mainbanner .trantion4 {
+    animation-delay: 0.4s; }
+  .mainbanner .trantion5 {
+    animation-delay: 0.5s; }
+  .mainbanner .trantion6 {
+    animation-delay: 0.6s; }
+
+.pageTitle {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #999999;
+  margin-top: 80px;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 10px;
+  background-color: #F5F7F9; }
+  .pageTitle a:hover {
+    color: #C80700; }
+
+.stumain {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .stumain .stum_1 {
+    float: left; }
+    .stumain .stum_1 .stm1 {
+      width: 515px;
+      height: 303px;
+      background: black; }
+      .stumain .stum_1 .stm1 video {
+        width: 100%;
+        height: 100%; }
+    .stumain .stum_1 .stm2 {
+      width: 515px;
+      height: 166px;
+      background: white;
+      box-shadow: 0px 0px 20px 0px rgba(48, 48, 48, 0.05);
+      position: relative;
+      padding: 30px; }
+      .stumain .stum_1 .stm2 .stm2_1 {
+        display: inline-block;
+        text-align: center;
+        margin-right: 50px; }
+        .stumain .stum_1 .stm2 .stm2_1 img {
+          width: 70px;
+          height: 70px; }
+        .stumain .stum_1 .stm2 .stm2_1 p {
+          font-size: 18px;
+          font-weight: bold;
+          color: #333333; }
+      .stumain .stum_1 .stm2 .stm2_2 {
+        display: inline-block;
+        width: 290px; }
+        .stumain .stum_1 .stm2 .stm2_2 .stm2_3 {
+          font-size: 18px;
+          color: #333333; }
+        .stumain .stum_1 .stm2 .stm2_2 .stm2_4 {
+          font-size: 14px;
+          font-weight: 300;
+          color: #999999;
+          margin: 10px 0 10px 0; }
+        .stumain .stum_1 .stm2 .stm2_2 .stm2_5 {
+          font-size: 14px;
+          color: #d2d2d2; }
+  .stumain .stum_2 {
+    float: right; }
+    .stumain .stum_2 .stum_21 {
+      width: 676px;
+      position: relative;
+      height: 153px;
+      background: white;
+      box-shadow: 0px 0px 20px 0px rgba(48, 48, 48, 0.05);
+      overflow: hidden; }
+      .stumain .stum_2 .stum_21:hover {
+        background-color: #C80700;
+        cursor: pointer; }
+        .stumain .stum_2 .stum_21:hover .stum_28 {
+          background: url("../img/baiduanhong.png") no-repeat 0 0/100% 100%;
+          color: #C80700; }
+        .stumain .stum_2 .stum_21:hover .stum_22 p {
+          color: #fff; }
+        .stumain .stum_2 .stum_21:hover .stum_23 .stum_24, .stumain .stum_2 .stum_21:hover .stum_23 .stum_26, .stumain .stum_2 .stum_21:hover .stum_23 .stum_27 {
+          color: #fff; }
+        .stumain .stum_2 .stum_21:hover .stum_23 .stum_25 {
+          background-color: #fff; }
+    .stumain .stum_2 a {
+      margin-top: 5px;
+      display: block; }
+    .stumain .stum_2 a:first-child {
+      margin-top: 0px; }
+    .stumain .stum_2 .stum_22 {
+      width: 145px;
+      border-right: 1px solid #F2F2F2;
+      height: 100%;
+      text-align: center;
+      padding-top: 23px;
+      float: left; }
+      .stumain .stum_2 .stum_22 p {
+        font-size: 18px;
+        color: #333333; }
+      .stumain .stum_2 .stum_22 img {
+        width: 70px;
+        height: 70px; }
+    .stumain .stum_2 .stum_23 {
+      padding: 25px 100px 0 35px;
+      height: 100%;
+      float: left;
+      width: 520px; }
+      .stumain .stum_2 .stum_23 .stum_24 {
+        font-size: 18px;
+        color: #333333; }
+      .stumain .stum_2 .stum_23 .stum_25 {
+        width: 14px;
+        height: 1px;
+        background: #cccccc;
+        margin: 13px 0; }
+      .stumain .stum_2 .stum_23 .stum_26 {
+        font-size: 14px;
+        color: #999999; }
+      .stumain .stum_2 .stum_23 .stum_27 {
+        font-size: 14px;
+        color: #d2d2d2;
+        margin-top: 10px; }
+    .stumain .stum_2 .stum_28 {
+      width: 28px;
+      height: 59px;
+      background: url("../img/duanhong.png") no-repeat 0 0/100% 100%;
+      color: #fff;
+      font-size: 13px;
+      padding: 8px;
+      position: absolute;
+      top: 0px;
+      right: 25px; }
+
+.stm3 {
+  width: 28px;
+  height: 86px;
+  background: url("../img/changhongse.png") no-repeat 0 0/100% 100%;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  padding: 7px 7px 0 7px;
+  font-size: 12px;
+  color: #fff; }
+
+.sutlistcon {
+  overflow: hidden;
+  width: 1220px;
+  margin: 0 auto;
+  position: relative;
+  left: -10px; }
+  .sutlistcon .stulisttitle {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin-bottom: 60px; }
+    .sutlistcon .stulisttitle p:last-child {
+      font-size: 24px;
+      color: #b3b3b3;
+      margin-top: 5px; }
+
+.stulist li {
+  width: 585px;
+  float: left;
+  margin-top: 30px;
+  background-color: #fff;
+  height: 290px;
+  transition: all .3s linear;
+  position: relative;
+  top: 0px;
+  overflow: hidden; }
+  .stulist li:hover {
+    top: -5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 23, 37, 0.1);
+    cursor: pointer; }
+    .stulist li:hover .stul_2 .stubtn {
+      color: #fff;
+      background-color: #C80700;
+      border-color: #C80700; }
+  .stulist li .stul_1 {
+    height: 100%;
+    width: 210px;
+    background-color: skyblue;
+    float: left; }
+  .stulist li .stul_2 {
+    float: left;
+    width: 375px;
+    padding: 30px;
+    height: 100%; }
+    .stulist li .stul_2 .sutright_1 {
+      font-size: 14px;
+      color: #666666; }
+    .stulist li .stul_2 .sutright_2 {
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 500;
+      color: #4d4d4d;
+      padding-right: 10px;
+      height: 25px;
+      line-height: 25px;
+      border-right: 1px solid #CCCCCC;
+      margin-right: 4px; }
+    .stulist li .stul_2 .stur_1 {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #666; }
+      .stulist li .stul_2 .stur_1 .icon {
+        color: #999999;
+        width: 15px;
+        height: 15px; }
+      .stulist li .stul_2 .stur_1 span {
+        color: #999; }
+      .stulist li .stul_2 .stur_1 p {
+        margin-top: 10px; }
+    .stulist li .stul_2 .stubtn {
+      display: inline-block;
+      width: 92px;
+      height: 25px;
+      border: 1px solid #999999;
+      border-radius: 12px;
+      color: #B2B2B2;
+      font-size: 12px;
+      text-align: center;
+      line-height: 25px;
+      position: absolute;
+      bottom: 30px;
+      right: 30px; }
+.stulist li:nth-child(2n-1) {
+  margin-right: 30px; }
+
+.pagetionbox {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 60px; }
+  .pagetionbox li {
+    display: inline-block;
+    margin: 0 20px;
+    width: 36px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 35px;
+    color: #999999;
+    font-size: 14px; }
+    .pagetionbox li:hover {
+      background-color: #C80700;
+      color: #fff;
+      border: 1px solid #C80700;
+      transform: scale(1.1);
+      cursor: pointer; }
+  .pagetionbox div {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999; }
+    .pagetionbox div:hover {
+      color: #C80700;
+      cursor: pointer; }
